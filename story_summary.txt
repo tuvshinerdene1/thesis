@@ -1,0 +1,25 @@
+2026.6.29 1st story summary of thesis work
+The game takes place in distant future where resource shortage and consequent wars already happened and teared down the earth we know today. the war escalated into even full scale
+nuclear war and the game takes place in so distant future where the marks left by nuclear weapons seem like gone over the years.
+
+after the war miscarriages among pregnant women became so high, the strange thing about it is that on the paper, pregnancy seems like success but during delivery, mothers' wombs were
+empty but the horrible pain of delivering was there. so as a result, work force of earth has declined so drastically.
+
+since both resource and man power were declined greatly, the man kind which already had become dependent on technology and artificial intelligence, found horrible way to compensate 
+for the lack of resources. 
+
+the society is ran by big heartless corporations and their idea was to make contract with terminally ill or financially struggled people with functioning brain to use their brain for 
+their ai robots. so here is where the game takes place.
+
+terminally ill father makes ultimate sacrifice to make his only daughters future better by making that contract and the daughter was lost since. some think that her relatives who were
+already planning to leave the city to refugee to rural area, had taken her with them. btw she was only mere infant during that time.
+
+the game starts with a service robot taking care of memorial of soldiers of corporate (the robot responsible for solely generating hologramic flowers ) beginning to have his consious and
+heart back so slowly (because of malfunction in the brain and robot shell connection) and player solves puzzle with state machines (like java kara ) and since the contract has been 
+broken, corporate force tries to take him back. (stealth sections will be there )
+
+and since he has become the gardener robot, he collects flowers to give his daughter and in the end, he barelly finds her and gives the flowers and forcefully gets shut down.
+
+the whole point of story is to feel sympathy for robot since both player and robot are learning their way to the world. one learns algorithmic thinking and other takes his humanity back.
+
+

@@ -1,3 +1,180 @@
 [gd_scene format=3 uid="uid://bsq1xymjvnyw7"]
 
+[ext_resource type="Script" uid="uid://c1mh2xadsr7mv" path="res://scripts/playerController.gd" id="1_46lwt"]
+[ext_resource type="Script" uid="uid://0ut8506604r5" path="res://levels/test_level.gd" id="1_x25rp"]
+[ext_resource type="Texture2D" uid="uid://c5bvnvvroi4ty" path="res://assets/brackeys_platformer_assets/sprites/knight.png" id="3_o6mel"]
+[ext_resource type="Texture2D" uid="uid://chhvq8avm664o" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="3_w7r7j"]
+[ext_resource type="Script" uid="uid://f0mvndx5wx13" path="res://levels/world_tile_map.gd" id="4_o6mel"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e7anx"]
+atlas = ExtResource("3_o6mel")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_28f8d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e7anx")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e7anx"]
+texture = ExtResource("3_w7r7j")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+0:7/0 = 0
+1:7/0 = 0
+2:7/0 = 0
+4:5/0 = 0
+5:5/0 = 0
+6:5/0 = 0
+6:4/0 = 0
+6:3/0 = 0
+5:3/0 = 0
+5:4/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:1/0 = 0
+11:1/0 = 0
+11:0/0 = 0
+10:0/0 = 0
+9:0/0 = 0
+8:0/0 = 0
+7:0/0 = 0
+6:0/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+7:3/0 = 0
+8:3/0 = 0
+9:3/0 = 0
+9:4/0 = 0
+8:4/0 = 0
+7:4/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+8:6/0 = 0
+7:6/0 = 0
+6:6/0 = 0
+5:6/0 = 0
+4:6/0 = 0
+3:6/0 = 0
+3:7/0 = 0
+4:7/0 = 0
+5:7/0 = 0
+6:7/0 = 0
+7:7/0 = 0
+8:7/0 = 0
+8:8/0 = 0
+7:8/0 = 0
+6:8/0 = 0
+5:8/0 = 0
+4:8/0 = 0
+3:8/0 = 0
+2:8/0 = 0
+1:8/0 = 0
+0:8/0 = 0
+0:9/0 = 0
+0:10/0 = 0
+0:11/0 = 0
+0:12/0 = 0
+0:13/0 = 0
+0:14/0 = 0
+0:15/0 = 0
+1:15/0 = 0
+1:14/0 = 0
+1:13/0 = 0
+1:12/0 = 0
+1:11/0 = 0
+1:10/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+2:10/0 = 0
+2:11/0 = 0
+2:12/0 = 0
+2:13/0 = 0
+2:14/0 = 0
+2:15/0 = 0
+3:15/0 = 0
+3:14/0 = 0
+3:13/0 = 0
+3:12/0 = 0
+3:11/0 = 0
+3:10/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+4:10/0 = 0
+4:11/0 = 0
+4:12/0 = 0
+4:13/0 = 0
+4:14/0 = 0
+5:13/0 = 0
+5:12/0 = 0
+5:11/0 = 0
+5:10/0 = 0
+5:9/0 = 0
+6:9/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+7:9/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_28f8d"]
+tile_size = Vector2i(32, 32)
+sources/2 = SubResource("TileSetAtlasSource_e7anx")
+
 [node name="TestLevel" type="Node2D" unique_id=1361096768]
+script = ExtResource("1_x25rp")
+
+[node name="Player" type="Node2D" parent="." unique_id=945657791 node_paths=PackedStringArray("tilemap_layer")]
+script = ExtResource("1_46lwt")
+tilemap_layer = NodePath("../WorldTileMap")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1373469980]
+z_index = 5
+sprite_frames = SubResource("SpriteFrames_28f8d")
+
+[node name="WorldTileMap" type="TileMapLayer" parent="." unique_id=379521641]
+tile_set = SubResource("TileSet_28f8d")
+script = ExtResource("4_o6mel")
