@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c1mh2xadsr7mv" path="res://scripts/playerController.gd" id="1_46lwt"]
 [ext_resource type="Script" uid="uid://0ut8506604r5" path="res://levels/test_level.gd" id="1_x25rp"]
 [ext_resource type="Texture2D" uid="uid://chhvq8avm664o" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="3_w7r7j"]
+[ext_resource type="Script" uid="uid://bny5gxw5mqx6r" path="res://scripts/FSMRunner.gd" id="4_e7anx"]
 [ext_resource type="Script" uid="uid://f0mvndx5wx13" path="res://levels/world_tile_map.gd" id="4_o6mel"]
 [ext_resource type="Script" uid="uid://dopsyxu8bpqr" path="res://levels/camera_2d.gd" id="5_o6mel"]
 
@@ -175,6 +176,9 @@ tilemap_layer = NodePath("../WorldTileMap")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Player" unique_id=1373469980]
 z_index = 5
 sprite_frames = SubResource("SpriteFrames_28f8d")
+
+[node name="StateMachineRunner" type="Node" parent="Player" unique_id=767265895]
+script = ExtResource("4_e7anx")
 
 [node name="WorldTileMap" type="TileMapLayer" parent="." unique_id=379521641]
 tile_set = SubResource("TileSet_28f8d")

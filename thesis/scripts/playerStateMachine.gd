@@ -2,7 +2,7 @@ class_name PlayerStateMachine
 
 class Transition:
 	var conditions: Dictionary = {}
-	var actions: Array[String] = []
+	var actions: Array = []
 	var next_state_name: String = ""
 	
 class State:
