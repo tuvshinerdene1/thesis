@@ -18,4 +18,5 @@ func _ready() -> void:
 	await player.move_forward()
 	await player.move_forward()
 	await player.move_forward()
+	await player.move_forward()
 	print("Program finished!")

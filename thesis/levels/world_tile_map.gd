@@ -1,7 +1,7 @@
 extends TileMapLayer
 
 const TILE_MAPPING = {
-	GridManager.CellType.EMPTY: Vector2i(0,9),
+	GridManager.CellType.EMPTY: Vector2i(9,8),
 	GridManager.CellType.TREE: Vector2i(6,5),
 	GridManager.CellType.LEAF: Vector2i(1,4),
 	GridManager.CellType.MUSHROOM: Vector2i(7,6)
