@@ -39,6 +39,7 @@ func tree_front() -> bool:
 func on_leaf() -> bool:
 	return GridManager.get_cell_type(grid_pos) == GridManager.CellType.LEAF
 	
+	
 # players API ACTIONS
 func move_forward() -> void:
 	if not tree_front():
