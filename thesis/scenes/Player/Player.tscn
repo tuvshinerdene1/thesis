@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://dufqfi41hjlt1"]
 
-[ext_resource type="Texture2D" uid="uid://c5bvnvvroi4ty" path="res://assets/brackeys_platformer_assets/sprites/knight.png" id="1_h00vy"]
+[ext_resource type="Texture2D" uid="uid://chhvq8avm664o" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_h00vy"]
+[ext_resource type="Script" uid="uid://cbej4p4thpmee" path="res://scenes/Player/playerController.gd" id="1_ky53y"]
+[ext_resource type="Script" uid="uid://cmev5g67rrn6s" path="res://scenes/Player/Runner.gd" id="3_bvqhm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ky53y"]
 atlas = ExtResource("1_h00vy")
-region = Rect2(0, 0, 32, 32)
+region = Rect2(160, 128, 16, 16)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bvqhm"]
 animations = [{
@@ -17,14 +19,18 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_h00vy"]
-size = Vector2(13, 19)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_28f8d"]
+size = Vector2(10, 12)
 
 [node name="Player" type="CharacterBody2D" unique_id=1571009154]
+script = ExtResource("1_ky53y")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=935749642]
 sprite_frames = SubResource("SpriteFrames_bvqhm")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1908744884]
-position = Vector2(-0.5, 2.5)
-shape = SubResource("RectangleShape2D_h00vy")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=72177761]
+position = Vector2(1, 0)
+shape = SubResource("RectangleShape2D_28f8d")
+
+[node name="Runner" type="Node" parent="." unique_id=1804368354]
+script = ExtResource("3_bvqhm")

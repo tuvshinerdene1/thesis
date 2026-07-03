@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cv2oqkkjdj752"]
+
+[ext_resource type="Script" uid="uid://iw1vuh1ckame" path="res://scenes/EnvironmentalObjects/EmptyTile/EmptyTile.gd" id="1_5bi4a"]
+[ext_resource type="Texture2D" uid="uid://chhvq8avm664o" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_lp3ga"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bi4a"]
+atlas = ExtResource("1_lp3ga")
+region = Rect2(144, 128, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_28f8d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bi4a")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="EmptyTile" type="Node2D" unique_id=1381658142]
+script = ExtResource("1_5bi4a")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1498468988]
+sprite_frames = SubResource("SpriteFrames_28f8d")

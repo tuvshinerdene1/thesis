@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://c7fs7iw4jahmb"]
+
+[ext_resource type="Texture2D" uid="uid://chhvq8avm664o" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_6q8qx"]
+[ext_resource type="Script" uid="uid://dkd5lkmec5xve" path="res://scenes/EnvironmentalObjects/Tree/Tree.gd" id="1_h2msd"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h2msd"]
+atlas = ExtResource("1_6q8qx")
+region = Rect2(112, 64, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_71to2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h2msd")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Tree" type="Node2D" unique_id=514866533]
+script = ExtResource("1_h2msd")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=360546165]
+sprite_frames = SubResource("SpriteFrames_71to2")

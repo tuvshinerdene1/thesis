@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://xx1k0o71soqh"]
+
+[ext_resource type="PackedScene" uid="uid://cv2oqkkjdj752" path="res://scenes/EnvironmentalObjects/EmptyTile/EmptyTile.tscn" id="1_c6lro"]
+[ext_resource type="PackedScene" uid="uid://dufqfi41hjlt1" path="res://scenes/Player/Player.tscn" id="2_ps0pm"]
+[ext_resource type="PackedScene" uid="uid://c7fs7iw4jahmb" path="res://scenes/EnvironmentalObjects/Tree/Tree.tscn" id="3_ps0pm"]
+
+[node name="Level1" type="Node2D" unique_id=448227902]
+
+[node name="EmptyTile" parent="." unique_id=1381658142 instance=ExtResource("1_c6lro")]
+
+[node name="Player" parent="." unique_id=1571009154 instance=ExtResource("2_ps0pm")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1704644323]
+zoom = Vector2(5, 5)
+
+[node name="Tree" parent="." unique_id=514866533 instance=ExtResource("3_ps0pm")]
+position = Vector2(16, 0)
+
+[node name="Tree2" parent="." unique_id=645324707 instance=ExtResource("3_ps0pm")]
+position = Vector2(32, -16)

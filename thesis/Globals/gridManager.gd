@@ -7,18 +7,27 @@ var grid_data: Dictionary = {}
 
 const GRID_WIDTH = 10
 const GRID_HEIGHT = 10
+const CELL_SIZE = 16
 
 
 func _ready() -> void:
 	clear_grid()
-	set_cell(Vector2i(3,2), CellType.TREE)
-	set_cell(Vector2i(4,2), CellType.LEAF)
 
 func clear_grid() -> void:
 	grid_data.clear()
 	for x in range(GRID_WIDTH):
 		for y in range(GRID_HEIGHT):
 			grid_data[Vector2i(x, y)] = CellType.EMPTY
+
+func pixel_to_grid(pixel_pos: Vector2) -> Vector2i:
+	return Vector2i(floor(pixel_pos.x / CELL_SIZE), floor(pixel_pos.y / CELL_SIZE))
+	
+func grid_to_pixel(grid_pos: Vector2i) -> Vector2:
+	# Returns the pixel center of a specific grid title
+	return Vector2(
+		(grid_pos.x * CELL_SIZE) + (CELL_SIZE / 2.0),
+		(grid_pos.y * CELL_SIZE) + (CELL_SIZE / 2.0)
+	)
 			
 func set_cell(coords:Vector2i, type: CellType) -> void:
 	if is_within_bounds(coords):
