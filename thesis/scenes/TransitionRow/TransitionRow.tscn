@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bom42jqp8csnj"]
+
+[ext_resource type="Script" uid="uid://lxw6xad8wfsi" path="res://scenes/TransitionRow/TransitionRow.gd" id="1_kcmkm"]
+
+[node name="TransitionRow" type="HBoxContainer" unique_id=888604527]
+script = ExtResource("1_kcmkm")
+
+[node name="SensorDropdown" type="OptionButton" parent="." unique_id=601115192]
+layout_mode = 2
+
+[node name="ConditionCheck" type="CheckBox" parent="." unique_id=1015910520]
+layout_mode = 2
+
+[node name="ActionDropdown" type="OptionButton" parent="." unique_id=1250990587]
+layout_mode = 2
+
+[node name="RemoveButton" type="Button" parent="." unique_id=1909237605]
+layout_mode = 2
+text = "X"

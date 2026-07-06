@@ -34,7 +34,15 @@ func _ready() -> void:
 func tree_front() -> bool:
 	var front_cell = grid_pos + DIR_VECTORS[current_heading]
 	return GridManager.get_cell_type(front_cell) == GridManager.CellType.TREE
+
+func tree_right() -> bool:
+	var right_cell = grid_pos + DIR_VECTORS[_get_relative_heading(1)]
+	return GridManager.get_cell_type(right_cell) == GridManager.CellType.TREE
 	
+func tree_left() -> bool:
+	var left_cell = grid_pos + DIR_VECTORS[_get_relative_heading(-1)]
+	return GridManager.get_cell_type(left_cell) == GridManager.CellType.TREE
+		
 func on_leaf() -> bool:
 	return GridManager.get_cell_type(grid_pos) == GridManager.CellType.LEAF
 
@@ -82,3 +90,7 @@ func animate_rotation() -> Tween:
 	tween.tween_property(self, "rotation_degrees", target_rotation, move_speed * 0.6)\
 	.set_trans(Tween.TRANS_CUBIC).set_ease(Tween.EASE_OUT)
 	return tween
+
+# --- Helper functions ---
+func _get_relative_heading(offset: int) -> Heading:
+	return posmod(current_heading + offset, 4) as Heading

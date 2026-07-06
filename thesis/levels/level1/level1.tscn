@@ -6,9 +6,12 @@
 
 [node name="Level1" type="Node2D" unique_id=448227902]
 
-[node name="EmptyTile" parent="." unique_id=1381658142 instance=ExtResource("1_c6lro")]
+[node name="BackGroundTiles" type="Node" parent="." unique_id=773791253]
+
+[node name="EmptyTile" parent="BackGroundTiles" unique_id=1381658142 instance=ExtResource("1_c6lro")]
 
 [node name="Player" parent="." unique_id=1571009154 instance=ExtResource("2_ps0pm")]
+z_index = 10
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1704644323]
 zoom = Vector2(5, 5)

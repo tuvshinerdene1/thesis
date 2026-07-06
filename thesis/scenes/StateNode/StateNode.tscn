@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://enrovw47t231"]
+
+[ext_resource type="Script" uid="uid://ctkp5uq505rlu" path="res://scenes/StateNode/StateNode.gd" id="1_abp3m"]
+[ext_resource type="PackedScene" uid="uid://bom42jqp8csnj" path="res://scenes/TransitionRow/TransitionRow.tscn" id="2_qwumt"]
+
+[node name="StateNode" type="GraphNode" unique_id=209210793]
+title = "State"
+slot/0/left_enabled = true
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color(1, 1, 1, 1)
+slot/1/left_icon = null
+slot/1/right_enabled = true
+slot/1/right_type = 0
+slot/1/right_color = Color(1, 1, 1, 1)
+slot/1/right_icon = null
+slot/1/draw_stylebox = true
+script = ExtResource("1_abp3m")
+transition_row_scene = ExtResource("2_qwumt")
+
+[node name="StateNameEdit" type="LineEdit" parent="." unique_id=1852861457]
+layout_mode = 2
+
+[node name="AddTransitionButton" type="Button" parent="." unique_id=860904067]
+layout_mode = 2
+text = "+ Add transition"
