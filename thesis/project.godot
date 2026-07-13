@@ -19,6 +19,12 @@ config/icon="res://icon.svg"
 GridManager="*uid://brxap10ukvip2"
 LevelManager="*uid://ojlwlljqfg1"
 
+[display]
+
+window/size/viewport_width=2000
+window/size/viewport_height=1000
+window/stretch/mode="viewport"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

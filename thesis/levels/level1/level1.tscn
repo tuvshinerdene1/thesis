@@ -1,10 +1,18 @@
 [gd_scene format=3 uid="uid://xx1k0o71soqh"]
 
+[ext_resource type="Script" uid="uid://b7er04kh8g61r" path="res://levels/level1/level_1.gd" id="1_aatsp"]
 [ext_resource type="PackedScene" uid="uid://cv2oqkkjdj752" path="res://scenes/EnvironmentalObjects/EmptyTile/EmptyTile.tscn" id="1_c6lro"]
 [ext_resource type="PackedScene" uid="uid://dufqfi41hjlt1" path="res://scenes/Player/Player.tscn" id="2_ps0pm"]
 [ext_resource type="PackedScene" uid="uid://c7fs7iw4jahmb" path="res://scenes/EnvironmentalObjects/Tree/Tree.tscn" id="3_ps0pm"]
+[ext_resource type="PackedScene" uid="uid://ur8o016pmwmb" path="res://scenes/VisualEditor/VisualEditor.tscn" id="5_sfwlx"]
+[ext_resource type="PackedScene" uid="uid://do71nxylno4gr" path="res://scenes/SimulationControls/SimulationControls.tscn" id="5_tysf0"]
 
-[node name="Level1" type="Node2D" unique_id=448227902]
+[node name="Level1" type="Node2D" unique_id=448227902 node_paths=PackedStringArray("graph_canvas", "player_runner", "ui_controls")]
+script = ExtResource("1_aatsp")
+level_name = "level 1"
+graph_canvas = NodePath("VisualEditor")
+player_runner = NodePath("Player")
+ui_controls = NodePath("SimulationControls")
 
 [node name="BackGroundTiles" type="Node" parent="." unique_id=773791253]
 
@@ -21,3 +29,18 @@ position = Vector2(16, 0)
 
 [node name="Tree2" parent="." unique_id=645324707 instance=ExtResource("3_ps0pm")]
 position = Vector2(32, -16)
+
+[node name="SimulationControls" parent="." unique_id=1617067325 instance=ExtResource("5_tysf0")]
+z_index = 10
+offset_left = -15.0
+offset_top = 65.0
+offset_right = -15.0
+offset_bottom = 65.0
+scale = Vector2(0.5, 0.5)
+
+[node name="VisualEditor" parent="." unique_id=611380395 instance=ExtResource("5_sfwlx")]
+offset_left = -194.0
+offset_top = -4.0
+offset_right = -194.0
+offset_bottom = -4.0
+scale = Vector2(0.15, 0.15)

@@ -3,16 +3,11 @@
 [ext_resource type="Script" uid="uid://ys7lqxwijxf2" path="res://scenes/VisualEditor/StateGraphCanvas.gd" id="1_2odrx"]
 [ext_resource type="PackedScene" uid="uid://enrovw47t231" path="res://scenes/StateNode/StateNode.tscn" id="2_w3ong"]
 
-[node name="VisualEditor" type="Control" unique_id=611380395]
-layout_mode = 3
-anchors_preset = 0
-
-[node name="StateGraphCanvas" type="GraphEdit" parent="." unique_id=989422201]
-layout_mode = 0
+[node name="StateGraphCanvas" type="GraphEdit" unique_id=989422201]
 offset_right = 1152.0
 offset_bottom = 648.0
 script = ExtResource("1_2odrx")
 state_node_scene = ExtResource("2_w3ong")
 
-[connection signal="connection_request" from="StateGraphCanvas" to="StateGraphCanvas" method="_on_connection_request"]
-[connection signal="disconnection_request" from="StateGraphCanvas" to="StateGraphCanvas" method="_on_disconnection_request"]
+[connection signal="connection_request" from="." to="." method="_on_connection_request"]
+[connection signal="disconnection_request" from="." to="." method="_on_disconnection_request"]
