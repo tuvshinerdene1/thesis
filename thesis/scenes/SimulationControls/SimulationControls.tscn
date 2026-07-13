@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://do71nxylno4gr"]
+
+[ext_resource type="Script" uid="uid://dv5u6se8ptgig" path="res://scenes/SimulationControls/SimulationControls.gd" id="1_inady"]
+
+[node name="SimulationControls" type="Control" unique_id=1617067325]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_inady")
+
+[node name="Toolbar" type="HBoxContainer" parent="." unique_id=557522332]
+layout_mode = 0
+offset_right = 1156.0
+offset_bottom = 649.0
+alignment = 1
+
+[node name="PlayButton" type="Button" parent="Toolbar" unique_id=1368629751]
+layout_mode = 2
+
+[node name="PauseButton" type="Button" parent="Toolbar" unique_id=1957615178]
+layout_mode = 2
+
+[node name="StopButton" type="Button" parent="Toolbar" unique_id=1420105011]
+layout_mode = 2
+
+[node name="SpeedSlider" type="HSlider" parent="Toolbar" unique_id=778367599]
+layout_mode = 2

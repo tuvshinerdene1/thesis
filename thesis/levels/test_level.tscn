@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bsq1xymjvnyw7"]
 
 [ext_resource type="Texture2D" uid="uid://chhvq8avm664o" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="3_w7r7j"]
-[ext_resource type="PackedScene" uid="uid://drilhaxyjwx46" path="res://scenes/VisualEditor/VisualEditor.tscn" id="7_ur00s"]
+[ext_resource type="PackedScene" uid="uid://ur8o016pmwmb" path="res://scenes/VisualEditor/VisualEditor.tscn" id="7_ur00s"]
 
 [sub_resource type="GDScript" id="GDScript_x25rp"]
 script/source = "extends Node2D
@@ -440,5 +440,4 @@ script = SubResource("GDScript_o6mel")
 script = SubResource("GDScript_e7anx")
 tilemap_layer = NodePath("../WorldTileMap")
 
-[node name="VisualEditor" parent="." unique_id=1469556134 node_paths=PackedStringArray("runner") instance=ExtResource("7_ur00s")]
-runner = NodePath("../Player/StateMachineRunner")
+[node name="VisualEditor" parent="." unique_id=1469556134 instance=ExtResource("7_ur00s")]

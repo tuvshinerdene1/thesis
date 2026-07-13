@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 GridManager="*uid://brxap10ukvip2"
+LevelManager="*uid://ojlwlljqfg1"
 
 [physics]
 
