@@ -39,8 +39,8 @@ func run_simulation_loop() -> void:
 			
 		# execute the specified actions sequentially, awaiting animations
 		for action in triggered_transition.actions:
-			if player.has_method(action):
-				await player.call(action)
+			if player.has_method(FSMTypes.get_action_name(action)):
+				await player.call(FSMTypes.get_action_name(action))
 		
 		# move to the next state 
 		if triggered_transition.next_state_name == "Stop" or triggered_transition.next_state_name == "":
