@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://chhvq8avm664o" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_h00vy"]
 [ext_resource type="Script" uid="uid://cbej4p4thpmee" path="res://scenes/Player/playerController.gd" id="1_ky53y"]
-[ext_resource type="Script" uid="uid://cmev5g67rrn6s" path="res://scenes/Player/Runner.gd" id="3_bvqhm"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ky53y"]
 atlas = ExtResource("1_h00vy")
@@ -31,6 +30,3 @@ sprite_frames = SubResource("SpriteFrames_bvqhm")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=72177761]
 position = Vector2(1, 0)
 shape = SubResource("RectangleShape2D_28f8d")
-
-[node name="Runner" type="Node" parent="." unique_id=1804368354]
-script = ExtResource("3_bvqhm")

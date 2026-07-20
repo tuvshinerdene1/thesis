@@ -6,4 +6,7 @@
 [node name="TestLevel1" type="Node2D" unique_id=547583877]
 script = ExtResource("1_1leqq")
 
-[node name="Player" parent="." unique_id=1571009154 instance=ExtResource("1_2mxjr")]
+[node name="Player" parent="." unique_id=1571009154 node_paths=PackedStringArray("tilemap_layer") instance=ExtResource("1_2mxjr")]
+tilemap_layer = NodePath("../TileMapLayer")
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=200696606]
